@@ -1,0 +1,132 @@
+ECO AND PERSONALISED ECHO
+===================================
+printing odd numbers
+#!/bin/bash
+for number in {1..100..2}
+do
+echo "$number "
+done
+exit 0
+======================================
+natural numbers
+#!/bin/sh
+for i in {1..50}
+do
+echo "$i "
+done 
+=====================================
+add , diff 
+#!/bin/bash 
+read x
+read y
+((sum=x+y))
+((difference=x-y))
+((product=x*y))
+((quotent=x/y))
+
+echo $sum
+echo $difference
+echo $product
+echo $quotent
+==========================================
+COMPARING OF TWO NUMBERS
+#!/bin/bash
+read X
+read Y
+if((X<Y))
+then
+   echo "X is less than Y"
+elif((X>Y))
+then 
+   echo "X is greater than Y"
+else
+   echo "X is equal to Y"
+   fi
+=============================================
+aritmetic expression
+read expression;
+printf "%.3f" $(echo "scale = 4; $expression" | bc);
+======================================================
+average
+read N
+temp=0
+for ((i=0;i<N;i++)){
+    read x
+    temp=`expr $temp + $x` 
+}
+printf "%.3f" $(echo "scale = 4; $temp / $N" | bc);
+============================================================
+PRINTING YES OR NO
+#!/bin/bash
+read x
+if [[($x == 'y') || ($x == 'Y')]]
+then
+    echo "YES"
+        elif [[($x == 'n') || ($x == 'N')]]
+        then
+        echo "NO"
+fi
+===========================================================
+read x
+read y
+read z
+if ((($x == $y) && ($y == $z)))
+then
+echo "EQUILATERAL"
+elif ((($x == $y) || ($x == $z) || ($y == $z)))
+then
+echo "ISOSCELES"
+else
+echo "SCALENE"
+fi
+=============================================================
+READ AN ARRAY
+
+while read line
+do
+    arr=(${arr[@]} $line)
+done
+echo ${arr[@]}
+=======================================================
+SLICE AN ARRAY
+arr=($(cat))
+echo ${arr[@]:3:5}
+===========================================================
+
+
+
+
+
+
+
+What will be the Output of the below code:
+
+
+public class A {
+    public static void main(String[] args)
+    {
+        System.out.println('j' + 'a' + 'v' + 'a');
+    }
+}
+Choices:
+
+a) java
+b) j a v a 
+c) 'j' + 'a' + 'v' + 'a'
+d) none
+==============================================================
+
+public class A {
+    public static void main(String[] args)
+    {
+        int $_ = 5;
+    }
+}
+Choices:
+
+a) 5
+b) error
+c) none
+
+
+
